@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Outfit:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-container {
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    user-select: none;
+    overflow: hidden;
+}
+
+.main-section {
+    width: 68rem;
+    height: 22rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    border-radius: 14px;
+}
+
+.hora {
+    background-color: rgb(34, 34, 34);
+}
+
+.minuto {
+    background-color: rgb(34, 34, 34);
+
+}
+
+.segundo {
+    background-color: rgb(34, 34, 34);
+
+}
+
+.tempo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    position: relative;
+}
+
+.tempo p {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(22, 22, 22);
+    color: aliceblue;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.tempo span {
+    color: aliceblue;
+    font-size: 8em;
+    padding-bottom: 32px;
+    font-weight: 900;
+    font-size: 10rem;
+    font-family: 'Exo', sans-serif;;
+}
+
+@media screen and (max-width:1200px) {
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40%;
+        background-color: transparent;
+    }
+
+    .tempo {
+        width: 70%;
+        height: 70%;
+    }
+
+    .tempo span {
+        padding-top: 14px;
+        font-size: 8rem;
+    }
+}
